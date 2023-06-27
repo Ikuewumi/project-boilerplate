@@ -1,36 +1,36 @@
 :root {
-  --clr-primary-100: hsl(197, 37, 84);
-  --clr-primary-200: hsl(197, 37, 75);
-  --clr-primary-300: hsl(197, 37, 64);
-  --clr-primary-400: hsl(197, 39, 50);
-  --clr-primary-500: hsl(197, 40, 47);
-  --clr-primary-600: hsl(197, 37, 37);
-  --clr-primary-700: hsl(197, 37, 31);
-  --clr-primary-800: hsl(197, 37, 21);
-  --clr-primary-900: hsl(197, 37, 10);
+  --clr-primary-100: hsl(197deg, 37, 84);
+  --clr-primary-200: hsl(197deg, 37, 75);
+  --clr-primary-300: hsl(197deg, 37, 64);
+  --clr-primary-400: hsl(197deg, 39, 50);
+  --clr-primary-500: hsl(197deg, 40, 47);
+  --clr-primary-600: hsl(197deg, 37, 37);
+  --clr-primary-700: hsl(197deg, 37, 31);
+  --clr-primary-800: hsl(197deg, 37, 21);
+  --clr-primary-900: hsl(197deg, 37, 10);
 
-  --clr-accent-100: hsl(173, 58, 89);
-  --clr-accent-200: hsl(173, 58, 75);
-  --clr-accent-300: hsl(173, 58, 60);
-  --clr-accent-400: hsl(173, 58, 52);
-  --clr-accent-500: hsl(173, 58, 44);
-  --clr-accent-600: hsl(173, 58, 36);
-  --clr-accent-700: hsl(173, 58, 25);
-  --clr-accent-800: hsl(173, 58, 19);
-  --clr-accent-900: hsl(173, 58, 10);
-
-
+  --clr-accent-100: hsl(173deg, 58, 89);
+  --clr-accent-200: hsl(173deg, 58, 75);
+  --clr-accent-300: hsl(173deg, 58, 60);
+  --clr-accent-400: hsl(173deg, 58, 52);
+  --clr-accent-500: hsl(173deg, 58, 44);
+  --clr-accent-600: hsl(173deg, 58, 36);
+  --clr-accent-700: hsl(173deg, 58, 25);
+  --clr-accent-800: hsl(173deg, 58, 19);
+  --clr-accent-900: hsl(173deg, 58, 10);
 
 
-  --clr-neutral-100: hsl(220, 19, 95);
-  --clr-neutral-200: hsl(220, 19, 85);
-  --clr-neutral-300: hsl(220, 19, 74);
-  --clr-neutral-400: hsl(220, 19, 65);
-  --clr-neutral-500: hsl(220, 19, 53);
-  --clr-neutral-600: hsl(220, 19, 40);
-  --clr-neutral-700: hsl(220, 19, 34);
-  --clr-neutral-800: hsl(220, 19, 23);
-  --clr-neutral-900: hsl(220, 19, 10);
+
+
+  --clr-neutral-100: hsl(220deg, 19, 95);
+  --clr-neutral-200: hsl(220deg, 19, 85);
+  --clr-neutral-300: hsl(220deg, 19, 74);
+  --clr-neutral-400: hsl(220deg, 19, 65);
+  --clr-neutral-500: hsl(220deg, 19, 53);
+  --clr-neutral-600: hsl(220deg, 19, 40);
+  --clr-neutral-700: hsl(220deg, 19, 34);
+  --clr-neutral-800: hsl(220deg, 19, 23);
+  --clr-neutral-900: hsl(220deg, 19, 10);
 
 
   
@@ -42,4 +42,22 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+	min-height: 100vh;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+
+
+/* Classes for display */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+.d-contents { display: contents; }
+
+
+
 

@@ -1,0 +1,36 @@
+/* Layout */
+.gridsetup {
+	--col-count: 6;
+
+	display: grid;
+	grid-template-columns:
+		minmax(1rem, 1fr) 
+		repeat(var(--col-count), minmax(0, 11rem))
+		minmax(1rem, 1fr);
+}
+
+.gridsetup > * {
+	grid-column: 2 / -2;
+}
+
+@media (min-width: 768px) {
+	.gridsetup.two {
+		--col-number: calc(var(--col-count) / 2);
+	}
+
+	.gridsetup.three {
+		--col-number: calc(var(--col-count) / 3);
+	}
+
+	.gridsetup.cols > * {
+		grid-column: span var(--col-number);
+	}
+
+	.gridsetup.cols > *:first-child {
+		grid-column: var(--col-start, 2) / span var(--col-number);
+	}
+
+	.gridsetup.cols > *:last-child {
+		grid-column: span var(--col-number) / calc(var(--col-start, 2) * -1);
+	}
+}
